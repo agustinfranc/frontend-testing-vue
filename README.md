@@ -8,6 +8,24 @@ https://testing-library.com/docs/
 
 https://testing-library.com/docs/vue-testing-library/intro
 
+### The problem
+
+You want to write maintainable tests for your Vue components. As a part of this goal, you want your tests to avoid including implementation details of your components. You'd rather focus on making your tests give you the confidence for which they are intended.
+
+### This solution
+
+Vue Testing Library is a very light-weight solution for testing Vue components. It provides light utility functions on top of @vue/test-utils, in a way that encourages better testing practices.
+
+Its primary guiding principle is:
+
+    [The more your tests resemble the way your software is used, the more confidence they can give you.](https://testing-library.com/docs/guiding-principles)
+
+So rather than dealing with instances of rendered Vue components, your tests will work with actual DOM nodes.
+
+The utilities this library provides facilitate querying the DOM in the same way the user would. They allow you to find elements by their label text, finding links and buttons from their text, and assert that your application is accessible.
+
+It also exposes a recommended way to find elements by a data-testid as an "escape hatch" for elements where the text content and label do not make sense or is not practical.
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
