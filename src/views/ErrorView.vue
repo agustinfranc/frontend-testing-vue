@@ -7,7 +7,7 @@
     </button>
   </div>
 
-  <p v-if="showErrorMessage" data-test-id="message">
+  <p v-if="showErrorMessage" role="alert" class="error" data-test-id="message">
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, natus? Cumque, similique.
     Aspernatur quam inventore obcaecati facilis officia unde qui perferendis, in voluptate magni a
     possimus rerum aliquid saepe corrupti?
