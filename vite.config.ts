@@ -13,6 +13,7 @@ export default defineConfig({
     }
   },
   test: {
-    globals: true
+    globals: true,
+    restoreMocks: true
   }
 })
